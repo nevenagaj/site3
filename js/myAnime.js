@@ -1,5 +1,5 @@
 var pictureAnimation = anime({
-    targets: '.about_main',
+    targets: ['.about_main','contact_main'],
     opacity: 1,
     duration: 2000,
     easing: 'linear'

@@ -11,38 +11,44 @@ body {
   padding: 0;
   font-size: 16px;
 }
-.about_main h2 {
+.about_main h2,
+.contact_main h2 {
   font-family: 'Nunito Sans', sans-serif;
   color: #A02534;
   opacity: 0.7;
 }
-.about_main .left img {
+.about_main .left img,
+.contact_main .left img {
   box-shadow: -5px 10px 10px 0 rgba(0, 0, 0, 0.2), -10px 16px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.about_main .left .inner img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
-.about_main .left .okvir {
+.about_main .left .okvir,
+.contact_main .left .okvir {
   border: 1px solid #323D4F66;
 }
-.about_main .right {
+.about_main .right,
+.contact_main .right {
   font-family: 'Lora', serif;
   color: #323D4F;
 }
-.about_main .right p {
+.about_main .right p,
+.contact_main .right p {
   margin-bottom: 4rem;
 }
-.about_main .right a {
+.about_main .right a,
+.contact_main .right a {
   font-family: 'Teko', sans-serif;
   text-transform: uppercase;
   letter-spacing: .0625rem;
   text-decoration: none;
   color: #A02534;
 }
-.about_main .right .a_border_bottom {
+.about_main .right .a_border_bottom,
+.contact_main .right .a_border_bottom {
   border-bottom: 1px solid #A02534;
+  width: 204px;
+}
+.contact_main a {
+  border: 1px solid #A02534;
   width: 204px;
 }
 .nav {
@@ -68,18 +74,18 @@ body {
   border-bottom: 2px solid #A02534;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .about {
+  .wrapp {
     width: 100%;
     position: relative;
   }
-  .about .header {
+  .wrapp .header {
     display: none;
   }
-  .about .header_mobile {
+  .wrapp .header_mobile {
     position: relative;
     z-index: 5000;
   }
-  .about .header_mobile .nav {
+  .wrapp .header_mobile .nav {
     height: 100%;
     width: 100%;
     transform-origin: 0 50px;
@@ -90,40 +96,40 @@ body {
     z-index: -10;
     background-color: white;
   }
-  .about .header_mobile .nav nav {
+  .wrapp .header_mobile .nav nav {
     margin-top: 6rem;
   }
-  .about .header_mobile .nav nav ul {
+  .wrapp .header_mobile .nav nav ul {
     padding: 0;
   }
-  .about .header_mobile .nav nav ul li {
+  .wrapp .header_mobile .nav nav ul li {
     text-align: center;
     margin-bottom: 1rem;
   }
-  .about .header_mobile .nav nav ul li a {
+  .wrapp .header_mobile .nav nav ul li a {
     letter-spacing: .0625rem;
     font-size: 1.6rem;
   }
-  .about .header_mobile .nav .sotialNetworks {
+  .wrapp .header_mobile .nav .sotialNetworks {
     text-align: left;
     margin-top: 3rem;
     text-align: center;
   }
-  .about .header_mobile .nav .sotialNetworks img {
+  .wrapp .header_mobile .nav .sotialNetworks img {
     opacity: 0.5;
   }
-  .about .header_mobile .logo {
+  .wrapp .header_mobile .logo {
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     margin-top: 0.48rem;
     /*hamburger*/
   }
-  .about .header_mobile .logo img {
+  .wrapp .header_mobile .logo img {
     width: 120px;
     height: auto;
   }
-  .about .header_mobile .logo .hamburger {
+  .wrapp .header_mobile .logo .hamburger {
     width: 60px;
     height: 45px;
     position: relative;
@@ -137,7 +143,7 @@ body {
     transition: 0.5s ease-in-out;
     cursor: pointer;
   }
-  .about .header_mobile .logo .hamburger span {
+  .wrapp .header_mobile .logo .hamburger span {
     display: block;
     position: absolute;
     height: 4px;
@@ -155,45 +161,47 @@ body {
     -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
   }
-  .about .header_mobile .logo .hamburger span:nth-child(1) {
+  .wrapp .header_mobile .logo .hamburger span:nth-child(1) {
     top: 0px;
   }
-  .about .header_mobile .logo .hamburger span:nth-child(2),
-  .about .header_mobile .logo .hamburger span:nth-child(3) {
+  .wrapp .header_mobile .logo .hamburger span:nth-child(2),
+  .wrapp .header_mobile .logo .hamburger span:nth-child(3) {
     top: 10px;
   }
-  .about .header_mobile .logo .hamburger span:nth-child(4) {
+  .wrapp .header_mobile .logo .hamburger span:nth-child(4) {
     top: 20px;
   }
-  .about .header_mobile .logo .hamburger.open span:nth-child(1) {
+  .wrapp .header_mobile .logo .hamburger.open span:nth-child(1) {
     top: 18px;
     width: 0%;
     left: 50%;
   }
-  .about .header_mobile .logo .hamburger.open span:nth-child(2) {
+  .wrapp .header_mobile .logo .hamburger.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .about .header_mobile .logo .hamburger.open span:nth-child(3) {
+  .wrapp .header_mobile .logo .hamburger.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  .about .header_mobile .logo .hamburger.open span:nth-child(4) {
+  .wrapp .header_mobile .logo .hamburger.open span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%;
   }
-  .about .about_main {
+  .wrapp .about_main,
+  .wrapp .contact_main {
     padding: 1rem;
     margin-top: 2rem;
     position: relative;
     opacity: 0;
   }
-  .about .about_main h2 {
+  .wrapp .about_main h2,
+  .wrapp .contact_main h2 {
     font-size: 4.5rem;
     position: absolute;
     top: -1.2rem;
@@ -201,14 +209,17 @@ body {
     margin: 0;
     z-index: 1000;
   }
-  .about .about_main .left .inner img {
+  .wrapp .about_main .left .inner img,
+  .wrapp .contact_main .left .inner img {
     margin-top: 1.7rem;
     opacity: 0.75;
   }
-  .about .about_main .left .okvir {
+  .wrapp .about_main .left .okvir,
+  .wrapp .contact_main .left .okvir {
     display: none;
   }
-  .about .about_main .right p {
+  .wrapp .about_main .right p,
+  .wrapp .contact_main .right p {
     font-size: 1.15rem;
     line-height: 1.8rem;
     margin-bottom: 1.5rem;
@@ -219,34 +230,34 @@ body {
   body {
     height: 100vh;
   }
-  body .about {
+  body .wrapp {
     width: 1700px;
     margin: 0 auto;
   }
-  body .about .header {
+  body .wrapp .header {
     display: flex;
     justify-content: space-between;
   }
-  body .about .header .logo img {
+  body .wrapp .header .logo img {
     width: 200px;
     height: auto;
     margin-top: 1rem;
   }
-  body .about .header .nav {
+  body .wrapp .header .nav {
     font-size: 1.125rem;
     margin-top: 1rem;
   }
-  body .about .header .nav nav ul li {
+  body .wrapp .header .nav nav ul li {
     margin-left: 1.5625rem;
     display: inline-block;
   }
-  body .about .header .nav nav ul li a {
+  body .wrapp .header .nav nav ul li a {
     letter-spacing: .0625rem;
   }
-  body .about .header_mobile {
+  body .wrapp .header_mobile {
     display: none;
   }
-  body .about .about_main {
+  body .wrapp .about_main {
     display: flex;
     position: relative;
     width: 1450px;
@@ -254,33 +265,79 @@ body {
     margin-left: 10rem;
     opacity: 0;
   }
-  body .about .about_main h2 {
+  body .wrapp .about_main h2 {
     position: absolute;
     font-size: 4.5rem;
     left: 48rem;
   }
-  body .about .about_main .right {
+  body .wrapp .about_main .right {
     width: 30%;
     font-size: 1.875rem;
     margin-top: 10rem;
   }
-  body .about .about_main .right a {
+  body .wrapp .about_main .right a {
     font-size: 1rem;
   }
-  body .about .about_main .left {
+  body .wrapp .about_main .left {
     width: 60%;
     position: relative;
     z-index: -5;
   }
-  body .about .about_main .left .inner {
+  body .wrapp .about_main .left .inner {
     padding: .625rem;
   }
-  body .about .about_main .left .okvir {
+  body .wrapp .about_main .left .inner img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  body .wrapp .about_main .left .okvir {
     width: 800px;
     height: 555px;
     position: absolute;
     top: 4rem;
     left: -2rem;
+    z-index: -10;
+  }
+  body .wrapp .contact_main {
+    display: flex;
+    position: relative;
+    width: 1450px;
+    margin-top: 4rem;
+    margin-left: 10rem;
+  }
+  body .wrapp .contact_main h2 {
+    position: absolute;
+    font-size: 4.5rem;
+    left: 32rem;
+  }
+  body .wrapp .contact_main .right {
+    width: 60%;
+    font-size: 1.875rem;
+    margin-top: 10rem;
+  }
+  body .wrapp .contact_main .right a {
+    font-size: 1rem;
+  }
+  body .wrapp .contact_main .left {
+    width: 40%;
+    position: relative;
+    z-index: -5;
+  }
+  body .wrapp .contact_main .left .inner {
+    padding: .625rem;
+  }
+  body .wrapp .contact_main .left .inner img {
+    width: auto;
+    max-width: 94%;
+    height: auto;
+  }
+  body .wrapp .contact_main .left .okvir {
+    width: 510px;
+    height: 765px;
+    position: absolute;
+    top: 4rem;
+    left: -3rem;
     z-index: -10;
   }
 }
