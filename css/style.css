@@ -194,15 +194,23 @@ body {
     width: 0%;
     left: 50%;
   }
+<<<<<<< HEAD
+  .wrapp .about_main {
+=======
   .wrapp .about_main,
   .wrapp .contact_main {
+>>>>>>> 70d4233722ad4dde71cc1f2e6993c8c8bdfbb2c0
     padding: 1rem;
     margin-top: 2rem;
     position: relative;
     opacity: 0;
   }
+<<<<<<< HEAD
+  .wrapp .about_main h2 {
+=======
   .wrapp .about_main h2,
   .wrapp .contact_main h2 {
+>>>>>>> 70d4233722ad4dde71cc1f2e6993c8c8bdfbb2c0
     font-size: 4.5rem;
     position: absolute;
     top: -1.2rem;
@@ -210,6 +218,16 @@ body {
     margin: 0;
     z-index: 1000;
   }
+<<<<<<< HEAD
+  .wrapp .about_main .left .inner img {
+    margin-top: 1.7rem;
+    opacity: 0.75;
+  }
+  .wrapp .about_main .left .okvir {
+    display: none;
+  }
+  .wrapp .about_main .right p {
+=======
   .wrapp .about_main .left .inner img,
   .wrapp .contact_main .left .inner img {
     margin-top: 1.7rem;
@@ -221,6 +239,7 @@ body {
   }
   .wrapp .about_main .right p,
   .wrapp .contact_main .right p {
+>>>>>>> 70d4233722ad4dde71cc1f2e6993c8c8bdfbb2c0
     font-size: 1.15rem;
     line-height: 1.8rem;
     margin-bottom: 1.5rem;
@@ -287,11 +306,14 @@ body {
   body .wrapp .about_main .left .inner {
     padding: .625rem;
   }
+<<<<<<< HEAD
+=======
   body .wrapp .about_main .left .inner img {
     width: auto;
     max-width: 100%;
     height: auto;
   }
+>>>>>>> 70d4233722ad4dde71cc1f2e6993c8c8bdfbb2c0
   body .wrapp .about_main .left .okvir {
     width: 800px;
     height: 555px;
