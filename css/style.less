@@ -46,17 +46,49 @@ html, body{
       text-decoration: none;
       color: @crvena_boja;
     }
+    button{
+      border: 1px solid @crvena_boja;
+      background-color: @white;
+      font-family: @navbar;
+      text-transform: uppercase;
+      color: @crvena_boja;
+    }
     .a_border_bottom{
       border-bottom: 1px solid @crvena_boja;
       width: 204px;
     }
+    .modal{
+      .modal-content{
+        h3{
+          color: @crvena_boja;
+          font-family: @main_paragraph;
+        }
+        form{
+          font-family: @text;
+          text-transform: uppercase;
+          input{
+            font-family: @text;
+          }
+          textarea{ font-family: @main_paragraph; padding: 0.5rem;}
+          .submit-msg-btn{
+            font-family: @navbar;
+            background-color: @white;
+            color: @crvena_boja;
+            text-transform: uppercase;
+            border: 1px solid @crvena_boja;
+
+          }
+        }
+      }
+    }
   }
 }
 .contact_main{
+  opacity: 0;
   a{
     border: 1px solid @crvena_boja;
     width: 204px;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.8rem;
   }
 }
 .nav{
@@ -329,12 +361,22 @@ html, body{
           width: 60%;
           font-size: 1.875rem;
           margin-top: 10rem;
-          a{
+          button{
+            position: absolute;
+            bottom: 10px;
             font-size: 1.2rem;
+            padding: 8px 25px;
           }
-          a:hover{
+          button:hover{
             color: @white;
             background-color: @crvena_boja;
+          }
+          .contact_text{
+            display: flex;
+            justify-content: space-between;
+            .contact_text_left, .contact_text_right{
+              font-size: 1.5rem,
+            }
           }
         }
         .left{
@@ -358,6 +400,95 @@ html, body{
             z-index: -10;
           }
         }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            /* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                /*margin: auto;*/
+                padding: 20px;
+                border: 1px solid #888;
+                width: 56%;
+                height: 80vh;
+                float: right;
+
+                position: relative;
+                /* The Close Button */
+                .close {
+                    color: #aaaaaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                    color: @crvena_boja;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            form{
+              font-size: 1.2rem;
+              width: 90%;
+              margin: 0 auto;
+              #fname{ width: 80%; }
+              input{
+                font-size: 1rem;
+                font-weight: 400;
+                color: #686b6f;
+                resize: vertical;
+                border: none;
+                border-bottom: 1px solid @crvena_boja;
+                margin-top: .25rem;
+              }
+              textarea{
+                resize: none;
+                width: 100%;
+                height: 50%;
+                border: 1px solid @crvena_boja;
+                margin-top: 1rem;
+              }
+              .first_last_name{
+                display: flex;
+                justify-content: space-between;
+              }
+              .emai-phone-form{
+                display: flex;
+                justify-content: space-between;
+                .email, .phone{
+                  label{ padding-right: 1rem;}
+                  input{ width: 22rem; }
+                }
+              }
+              .subject{
+                margin-top: 2rem;
+              }
+              .submit-msg-btn{
+                position: absolute;
+                bottom: 4rem;
+                font-size: 1.2rem;
+                padding: 8px 25px;
+              }
+              .submit-msg-btn:hover{
+                color: @white;
+                background-color: @crvena_boja;
+              }
+            }
+          }
+        }
+
+
+
 
       }
     }

@@ -1,3 +1,4 @@
+<?php $page = basename($_SERVER['PHP_SELF']);?>
 <html lang="en">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -24,12 +25,12 @@
         <div class="nav">
           <nav>
             <ul>
-              <li><a href="index.php" class="active">Home</a></li>
-              <li><a href="our_story.php">Our story</a></li>
+              <li><a href="index.php" class="<?php if($page == 'index.php'){ echo ' active"';}?>">Home</a></li>
+              <li><a href="our_story.php" class="<?php if($page == 'our_story.php'){ echo ' active"';}?>">Our story</a></li>
               <!--<li><a href="ourchocolate.php">Our chocolate</a></li>-->
-              <li><a href="workshop.php">Galery</a></li>
-              <li><a href="galery.php">Workshop</a></li>
-              <li><a href="contact.php">Contact</a></li>
+              <li><a href="workshop.php" class="<?php if($page == 'workshop.php'){ echo ' active"';}?>">Galery</a></li>
+              <li><a href="galery.php" class="<?php if($page == 'galery.php'){ echo ' active"';}?>">Workshop</a></li>
+              <li><a href="contact.php" class="<?php if($page == 'contact.php'){ echo ' active"';}?>">Contact</a></li>
             </ul>
           </nav>
         </div>

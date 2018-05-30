@@ -42,15 +42,53 @@ body {
   text-decoration: none;
   color: #A02534;
 }
+.about_main .right button,
+.contact_main .right button {
+  border: 1px solid #A02534;
+  background-color: white;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  color: #A02534;
+}
 .about_main .right .a_border_bottom,
 .contact_main .right .a_border_bottom {
   border-bottom: 1px solid #A02534;
   width: 204px;
 }
+.about_main .right .modal .modal-content h3,
+.contact_main .right .modal .modal-content h3 {
+  color: #A02534;
+  font-family: 'Lora', serif;
+}
+.about_main .right .modal .modal-content form,
+.contact_main .right .modal .modal-content form {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+.about_main .right .modal .modal-content form input,
+.contact_main .right .modal .modal-content form input {
+  font-family: 'Poppins', sans-serif;
+}
+.about_main .right .modal .modal-content form textarea,
+.contact_main .right .modal .modal-content form textarea {
+  font-family: 'Lora', serif;
+  padding: 0.5rem;
+}
+.about_main .right .modal .modal-content form .submit-msg-btn,
+.contact_main .right .modal .modal-content form .submit-msg-btn {
+  font-family: 'Teko', sans-serif;
+  background-color: white;
+  color: #A02534;
+  text-transform: uppercase;
+  border: 1px solid #A02534;
+}
+.contact_main {
+  opacity: 0;
+}
 .contact_main a {
   border: 1px solid #A02534;
   width: 204px;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.8rem;
 }
 .nav {
   font-family: 'Teko', sans-serif;
@@ -317,12 +355,23 @@ body {
     font-size: 1.875rem;
     margin-top: 10rem;
   }
-  body .wrapp .contact_main .right a {
+  body .wrapp .contact_main .right button {
+    position: absolute;
+    bottom: 10px;
     font-size: 1.2rem;
+    padding: 8px 25px;
   }
-  body .wrapp .contact_main .right a:hover {
+  body .wrapp .contact_main .right button:hover {
     color: white;
     background-color: #A02534;
+  }
+  body .wrapp .contact_main .right .contact_text {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrapp .contact_main .right .contact_text .contact_text_left,
+  body .wrapp .contact_main .right .contact_text .contact_text_right {
+    font-size: 1.5rem;
   }
   body .wrapp .contact_main .left {
     width: 40%;
@@ -344,5 +393,104 @@ body {
     top: 4rem;
     left: -3rem;
     z-index: -10;
+  }
+  body .wrapp .contact_main .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #000000;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    /* Modal Content */
+  }
+  body .wrapp .contact_main .modal .modal-content {
+    background-color: #fefefe;
+    /*margin: auto;*/
+    padding: 20px;
+    border: 1px solid #888;
+    width: 56%;
+    height: 80vh;
+    float: right;
+    position: relative;
+    /* The Close Button */
+  }
+  body .wrapp .contact_main .modal .modal-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  body .wrapp .contact_main .modal .modal-content .close:hover,
+  body .wrapp .contact_main .modal .modal-content .close:focus {
+    color: #A02534;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  body .wrapp .contact_main .modal .modal-content form {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body .wrapp .contact_main .modal .modal-content form #fname {
+    width: 80%;
+  }
+  body .wrapp .contact_main .modal .modal-content form input {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #686b6f;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #A02534;
+    margin-top: .25rem;
+  }
+  body .wrapp .contact_main .modal .modal-content form textarea {
+    resize: none;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #A02534;
+    margin-top: 1rem;
+  }
+  body .wrapp .contact_main .modal .modal-content form .first_last_name {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrapp .contact_main .modal .modal-content form .emai-phone-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrapp .contact_main .modal .modal-content form .emai-phone-form .email label,
+  body .wrapp .contact_main .modal .modal-content form .emai-phone-form .phone label {
+    padding-right: 1rem;
+  }
+  body .wrapp .contact_main .modal .modal-content form .emai-phone-form .email input,
+  body .wrapp .contact_main .modal .modal-content form .emai-phone-form .phone input {
+    width: 22rem;
+  }
+  body .wrapp .contact_main .modal .modal-content form .subject {
+    margin-top: 2rem;
+  }
+  body .wrapp .contact_main .modal .modal-content form .submit-msg-btn {
+    position: absolute;
+    bottom: 4rem;
+    font-size: 1.2rem;
+    padding: 8px 25px;
+  }
+  body .wrapp .contact_main .modal .modal-content form .submit-msg-btn:hover {
+    color: white;
+    background-color: #A02534;
   }
 }

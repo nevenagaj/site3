@@ -1,5 +1,5 @@
 var pictureAnimation = anime({
-    targets: ['.about_main','contact_main'],
+    targets: ['.about_main','.contact_main'],
     opacity: 1,
     duration: 2000,
     easing: 'linear'
@@ -38,6 +38,4 @@ var hamburgerAnimation = anime({
 document.querySelector('.hamburger').onclick = function() {
   animationStart.play();
   animationStart.reverse();
-  hamburgerAnimation.play();
-  hamburgerAnimation.reverse();
 }
